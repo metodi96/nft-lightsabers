@@ -12,7 +12,7 @@ contract LightsaberForge is ERC721 {
         string hilt;
     }
 
-    mapping (uint => address) public lightsaberToOwner;
+    mapping (uint256 => address) public lightsaberToOwner;
     mapping (bytes32 => bool) public combinationExists;
 
     Lightsaber[] public lightsabers;
@@ -24,8 +24,9 @@ contract LightsaberForge is ERC721 {
         require(keccak256(abi.encode(_colorCrystal)) != keccak256(abi.encode("")), "The color should not be empty");
         require(keccak256(abi.encode(_hilt)) != keccak256(abi.encode("")), "The hilt should not be empty");
          lightsabers.push(Lightsaber(_colorCrystal, _hilt));
-         uint _id = lightsabers.length - 1;
+         uint256 _id = lightsabers.length - 1;
         _mint(msg.sender, _id);
+        lightsaberToOwner[_id] = msg.sender;
         bytes32 _combination = keccak256(abi.encode(_colorCrystal, _hilt));
         combinationExists[_combination] = true;
 
