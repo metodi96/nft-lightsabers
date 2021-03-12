@@ -45,6 +45,7 @@ contract LightsaberAuction is LightsaberForge {
 
         //send the token to the smart contract
         _transfer(msg.sender, address(this), _tokenId);    
+        lightsaberToOwner[_tokenId] = address(this);
         emit AuctionCreated(msg.sender, _tokenId, _startDate, _endDate, _highestBid, msg.sender);
     }
 
@@ -84,6 +85,7 @@ contract LightsaberAuction is LightsaberForge {
         require(!tokenIdToAuction[_tokenId].ended, "Auction has already ended");
         Auction storage auction = tokenIdToAuction[_tokenId];
         _transfer(address(this), auction.highestBidder, _tokenId);
+        lightsaberToOwner[_tokenId] = auction.highestBidder;
         auction.ended = true;
         emit AuctionEnded(_tokenId, auction.highestBid, auction.highestBidder);
     }
