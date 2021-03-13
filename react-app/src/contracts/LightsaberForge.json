@@ -519,54 +519,54 @@
     "absolutePath": "/C/Users/Metodi/Desktop/ProjectsDapp/nft-lightsabers/contracts/LightsaberForge.sol",
     "exportedSymbols": {
       "Address": [
-        2363
+        2380
       ],
       "Context": [
-        2386
+        2403
       ],
       "ERC165": [
-        564
+        581
       ],
       "ERC721": [
-        1875
+        1892
       ],
       "EnumerableMap": [
-        2946
+        2963
       ],
       "EnumerableSet": [
-        3438
+        3455
       ],
       "IERC165": [
-        576
+        593
       ],
       "IERC721": [
-        1991
+        2008
       ],
       "IERC721Enumerable": [
-        2022
+        2039
       ],
       "IERC721Metadata": [
-        2049
+        2066
       ],
       "IERC721Receiver": [
-        2067
+        2084
       ],
       "LightsaberForge": [
-        507
+        524
       ],
       "SafeMath": [
-        931
+        948
       ],
       "Strings": [
-        3525
+        3542
       ]
     },
-    "id": 508,
+    "id": 525,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 367,
+        "id": 384,
         "literals": [
           "solidity",
           "^",
@@ -579,10 +579,10 @@
       {
         "absolutePath": "/C/Users/Metodi/Desktop/ProjectsDapp/nft-lightsabers/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "file": "../node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol",
-        "id": 368,
+        "id": 385,
         "nodeType": "ImportDirective",
-        "scope": 508,
-        "sourceUnit": 1876,
+        "scope": 525,
+        "sourceUnit": 1893,
         "src": "60:73:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -592,63 +592,63 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 369,
+              "id": 386,
               "name": "ERC721",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1875,
+              "referencedDeclaration": 1892,
               "src": "165:6:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC721_$1875",
+                "typeIdentifier": "t_contract$_ERC721_$1892",
                 "typeString": "contract ERC721"
               }
             },
-            "id": 370,
+            "id": 387,
             "nodeType": "InheritanceSpecifier",
             "src": "165:6:1"
           }
         ],
         "contractDependencies": [
-          564,
-          576,
-          1875,
-          1991,
-          2022,
-          2049,
-          2386
+          581,
+          593,
+          1892,
+          2008,
+          2039,
+          2066,
+          2403
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 507,
+        "id": 524,
         "linearizedBaseContracts": [
-          507,
-          1875,
-          2022,
-          2049,
-          1991,
-          564,
-          576,
-          2386
+          524,
+          1892,
+          2039,
+          2066,
+          2008,
+          581,
+          593,
+          2403
         ],
         "name": "LightsaberForge",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 376,
+            "id": 393,
             "name": "LightsaberCreated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 375,
+              "id": 392,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 372,
+                  "id": 389,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "colorCrystal",
                   "nodeType": "VariableDeclaration",
-                  "scope": 376,
+                  "scope": 393,
                   "src": "205:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -657,7 +657,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 371,
+                    "id": 388,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "205:6:1",
@@ -670,12 +670,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 374,
+                  "id": 391,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "hilt",
                   "nodeType": "VariableDeclaration",
-                  "scope": 376,
+                  "scope": 393,
                   "src": "226:11:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -684,7 +684,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 373,
+                    "id": 390,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "226:6:1",
@@ -702,15 +702,15 @@
           },
           {
             "canonicalName": "LightsaberForge.Lightsaber",
-            "id": 381,
+            "id": 398,
             "members": [
               {
                 "constant": false,
-                "id": 378,
+                "id": 395,
                 "mutability": "mutable",
                 "name": "colorCrystal",
                 "nodeType": "VariableDeclaration",
-                "scope": 381,
+                "scope": 398,
                 "src": "276:19:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -719,7 +719,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 377,
+                  "id": 394,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "276:6:1",
@@ -732,11 +732,11 @@
               },
               {
                 "constant": false,
-                "id": 380,
+                "id": 397,
                 "mutability": "mutable",
                 "name": "hilt",
                 "nodeType": "VariableDeclaration",
-                "scope": 381,
+                "scope": 398,
                 "src": "306:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -745,7 +745,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 379,
+                  "id": 396,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "306:6:1",
@@ -759,18 +759,18 @@
             ],
             "name": "Lightsaber",
             "nodeType": "StructDefinition",
-            "scope": 507,
+            "scope": 524,
             "src": "247:78:1",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "96abc460",
-            "id": 385,
+            "id": 402,
             "mutability": "mutable",
             "name": "lightsaberToOwner",
             "nodeType": "VariableDeclaration",
-            "scope": 507,
+            "scope": 524,
             "src": "333:53:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -779,9 +779,9 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 384,
+              "id": 401,
               "keyType": {
-                "id": 382,
+                "id": 399,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "342:7:1",
@@ -797,7 +797,7 @@
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 383,
+                "id": 400,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "353:7:1",
@@ -813,11 +813,11 @@
           {
             "constant": false,
             "functionSelector": "cb642ffc",
-            "id": 389,
+            "id": 406,
             "mutability": "mutable",
             "name": "combinationExists",
             "nodeType": "VariableDeclaration",
-            "scope": 507,
+            "scope": 524,
             "src": "393:50:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -826,9 +826,9 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 388,
+              "id": 405,
               "keyType": {
-                "id": 386,
+                "id": 403,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "402:7:1",
@@ -844,7 +844,7 @@
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 387,
+                "id": 404,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "413:4:1",
@@ -859,35 +859,35 @@
           {
             "constant": false,
             "functionSelector": "0cae4910",
-            "id": 392,
+            "id": 409,
             "mutability": "mutable",
             "name": "lightsabers",
             "nodeType": "VariableDeclaration",
-            "scope": 507,
+            "scope": 524,
             "src": "452:31:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Lightsaber_$381_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Lightsaber_$398_storage_$dyn_storage",
               "typeString": "struct LightsaberForge.Lightsaber[]"
             },
             "typeName": {
               "baseType": {
-                "id": 390,
+                "id": 407,
                 "name": "Lightsaber",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 381,
+                "referencedDeclaration": 398,
                 "src": "452:10:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Lightsaber_$381_storage_ptr",
+                  "typeIdentifier": "t_struct$_Lightsaber_$398_storage_ptr",
                   "typeString": "struct LightsaberForge.Lightsaber"
                 }
               },
-              "id": 391,
+              "id": 408,
               "nodeType": "ArrayTypeName",
               "src": "452:12:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Lightsaber_$381_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Lightsaber_$398_storage_$dyn_storage_ptr",
                 "typeString": "struct LightsaberForge.Lightsaber[]"
               }
             },
@@ -895,12 +895,12 @@
           },
           {
             "body": {
-              "id": 399,
+              "id": 416,
               "nodeType": "Block",
               "src": "539:2:1",
               "statements": []
             },
-            "id": 400,
+            "id": 417,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -908,7 +908,7 @@
                 "arguments": [
                   {
                     "hexValue": "4c696768747361626572466f726765",
-                    "id": 395,
+                    "id": 412,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -924,7 +924,7 @@
                   },
                   {
                     "hexValue": "4c5346",
-                    "id": 396,
+                    "id": 413,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -939,16 +939,16 @@
                     "value": "LSF"
                   }
                 ],
-                "id": 397,
+                "id": 414,
                 "modifierName": {
-                  "id": 394,
+                  "id": 411,
                   "name": "ERC721",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1875,
+                  "referencedDeclaration": 1892,
                   "src": "506:6:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ERC721_$1875_$",
+                    "typeIdentifier": "t_type$_t_contract$_ERC721_$1892_$",
                     "typeString": "type(contract ERC721)"
                   }
                 },
@@ -959,18 +959,18 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 393,
+              "id": 410,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "503:2:1"
             },
             "returnParameters": {
-              "id": 398,
+              "id": 415,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "539:0:1"
             },
-            "scope": 507,
+            "scope": 524,
             "src": "492:49:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -978,7 +978,7 @@
           },
           {
             "body": {
-              "id": 505,
+              "id": 522,
               "nodeType": "Block",
               "src": "620:739:1",
               "statements": [
@@ -986,7 +986,7 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 417,
+                        "id": 434,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -997,28 +997,28 @@
                         "src": "639:63:1",
                         "subExpression": {
                           "baseExpression": {
-                            "id": 408,
+                            "id": 425,
                             "name": "combinationExists",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 389,
+                            "referencedDeclaration": 406,
                             "src": "640:17:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                               "typeString": "mapping(bytes32 => bool)"
                             }
                           },
-                          "id": 416,
+                          "id": 433,
                           "indexExpression": {
                             "arguments": [
                               {
                                 "arguments": [
                                   {
-                                    "id": 412,
+                                    "id": 429,
                                     "name": "_colorCrystal",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 402,
+                                    "referencedDeclaration": 419,
                                     "src": "679:13:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_string_memory_ptr",
@@ -1026,11 +1026,11 @@
                                     }
                                   },
                                   {
-                                    "id": 413,
+                                    "id": 430,
                                     "name": "_hilt",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 404,
+                                    "referencedDeclaration": 421,
                                     "src": "694:5:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_string_memory_ptr",
@@ -1050,7 +1050,7 @@
                                     }
                                   ],
                                   "expression": {
-                                    "id": 410,
+                                    "id": 427,
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
@@ -1061,7 +1061,7 @@
                                       "typeString": "abi"
                                     }
                                   },
-                                  "id": 411,
+                                  "id": 428,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1074,7 +1074,7 @@
                                     "typeString": "function () pure returns (bytes memory)"
                                   }
                                 },
-                                "id": 414,
+                                "id": 431,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1097,7 +1097,7 @@
                                   "typeString": "bytes memory"
                                 }
                               ],
-                              "id": 409,
+                              "id": 426,
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1108,7 +1108,7 @@
                                 "typeString": "function (bytes memory) pure returns (bytes32)"
                               }
                             },
-                            "id": 415,
+                            "id": 432,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1141,7 +1141,7 @@
                       },
                       {
                         "hexValue": "5468697320636f6d62696e6174696f6e2063616e6e6f74206578697374206d6f7265207468616e206f6e63652e",
-                        "id": 418,
+                        "id": 435,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1167,7 +1167,7 @@
                           "typeString": "literal_string \"This combination cannot exist more than once.\""
                         }
                       ],
-                      "id": 407,
+                      "id": 424,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1181,7 +1181,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 419,
+                    "id": 436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1196,7 +1196,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 420,
+                  "id": 437,
                   "nodeType": "ExpressionStatement",
                   "src": "631:121:1"
                 },
@@ -1208,7 +1208,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 434,
+                        "id": 451,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1218,11 +1218,11 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 425,
+                                  "id": 442,
                                   "name": "_colorCrystal",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 402,
+                                  "referencedDeclaration": 419,
                                   "src": "792:13:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -1238,7 +1238,7 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 423,
+                                  "id": 440,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -1249,7 +1249,7 @@
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 424,
+                                "id": 441,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -1262,7 +1262,7 @@
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 426,
+                              "id": 443,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1285,7 +1285,7 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 422,
+                            "id": 439,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1296,7 +1296,7 @@
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 427,
+                          "id": 444,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1319,7 +1319,7 @@
                               "arguments": [
                                 {
                                   "hexValue": "",
-                                  "id": 431,
+                                  "id": 448,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1342,7 +1342,7 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 429,
+                                  "id": 446,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -1353,7 +1353,7 @@
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 430,
+                                "id": 447,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -1366,7 +1366,7 @@
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 432,
+                              "id": 449,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1389,7 +1389,7 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 428,
+                            "id": 445,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1400,7 +1400,7 @@
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 433,
+                          "id": 450,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1423,7 +1423,7 @@
                       },
                       {
                         "hexValue": "54686520636f6c6f722073686f756c64206e6f7420626520656d707479",
-                        "id": 435,
+                        "id": 452,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1449,7 +1449,7 @@
                           "typeString": "literal_string \"The color should not be empty\""
                         }
                       ],
-                      "id": 421,
+                      "id": 438,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1463,7 +1463,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 436,
+                    "id": 453,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1478,7 +1478,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 437,
+                  "id": 454,
                   "nodeType": "ExpressionStatement",
                   "src": "763:107:1"
                 },
@@ -1490,7 +1490,7 @@
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
                         },
-                        "id": 451,
+                        "id": 468,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1500,11 +1500,11 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 442,
+                                  "id": 459,
                                   "name": "_hilt",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 404,
+                                  "referencedDeclaration": 421,
                                   "src": "910:5:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -1520,7 +1520,7 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 440,
+                                  "id": 457,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -1531,7 +1531,7 @@
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 441,
+                                "id": 458,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -1544,7 +1544,7 @@
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 443,
+                              "id": 460,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1567,7 +1567,7 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 439,
+                            "id": 456,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1578,7 +1578,7 @@
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 444,
+                          "id": 461,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1601,7 +1601,7 @@
                               "arguments": [
                                 {
                                   "hexValue": "",
-                                  "id": 448,
+                                  "id": 465,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1624,7 +1624,7 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 446,
+                                  "id": 463,
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
@@ -1635,7 +1635,7 @@
                                     "typeString": "abi"
                                   }
                                 },
-                                "id": 447,
+                                "id": 464,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -1648,7 +1648,7 @@
                                   "typeString": "function () pure returns (bytes memory)"
                                 }
                               },
-                              "id": 449,
+                              "id": 466,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1671,7 +1671,7 @@
                                 "typeString": "bytes memory"
                               }
                             ],
-                            "id": 445,
+                            "id": 462,
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1682,7 +1682,7 @@
                               "typeString": "function (bytes memory) pure returns (bytes32)"
                             }
                           },
-                          "id": 450,
+                          "id": 467,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1705,7 +1705,7 @@
                       },
                       {
                         "hexValue": "5468652068696c742073686f756c64206e6f7420626520656d707479",
-                        "id": 452,
+                        "id": 469,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1731,7 +1731,7 @@
                           "typeString": "literal_string \"The hilt should not be empty\""
                         }
                       ],
-                      "id": 438,
+                      "id": 455,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1745,7 +1745,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 453,
+                    "id": 470,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1760,7 +1760,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 454,
+                  "id": 471,
                   "nodeType": "ExpressionStatement",
                   "src": "881:98:1"
                 },
@@ -1770,11 +1770,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 459,
+                            "id": 476,
                             "name": "_colorCrystal",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 402,
+                            "referencedDeclaration": 419,
                             "src": "1019:13:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1782,11 +1782,11 @@
                             }
                           },
                           {
-                            "id": 460,
+                            "id": 477,
                             "name": "_hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 404,
+                            "referencedDeclaration": 421,
                             "src": "1034:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -1805,18 +1805,18 @@
                               "typeString": "string memory"
                             }
                           ],
-                          "id": 458,
+                          "id": 475,
                           "name": "Lightsaber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 381,
+                          "referencedDeclaration": 398,
                           "src": "1008:10:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_Lightsaber_$381_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_Lightsaber_$398_storage_ptr_$",
                             "typeString": "type(struct LightsaberForge.Lightsaber storage pointer)"
                           }
                         },
-                        "id": 461,
+                        "id": 478,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1827,7 +1827,7 @@
                         "src": "1008:32:1",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Lightsaber_$381_memory_ptr",
+                          "typeIdentifier": "t_struct$_Lightsaber_$398_memory_ptr",
                           "typeString": "struct LightsaberForge.Lightsaber memory"
                         }
                       }
@@ -1835,23 +1835,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Lightsaber_$381_memory_ptr",
+                          "typeIdentifier": "t_struct$_Lightsaber_$398_memory_ptr",
                           "typeString": "struct LightsaberForge.Lightsaber memory"
                         }
                       ],
                       "expression": {
-                        "id": 455,
+                        "id": 472,
                         "name": "lightsabers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 392,
+                        "referencedDeclaration": 409,
                         "src": "991:11:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Lightsaber_$381_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Lightsaber_$398_storage_$dyn_storage",
                           "typeString": "struct LightsaberForge.Lightsaber storage ref[] storage ref"
                         }
                       },
-                      "id": 457,
+                      "id": 474,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1860,11 +1860,11 @@
                       "nodeType": "MemberAccess",
                       "src": "991:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Lightsaber_$381_storage_$returns$__$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Lightsaber_$398_storage_$returns$__$",
                         "typeString": "function (struct LightsaberForge.Lightsaber storage ref)"
                       }
                     },
-                    "id": 462,
+                    "id": 479,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1879,22 +1879,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 463,
+                  "id": 480,
                   "nodeType": "ExpressionStatement",
                   "src": "991:50:1"
                 },
                 {
                   "assignments": [
-                    465
+                    482
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 465,
+                      "id": 482,
                       "mutability": "mutable",
                       "name": "_id",
                       "nodeType": "VariableDeclaration",
-                      "scope": 505,
+                      "scope": 522,
                       "src": "1053:11:1",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1903,7 +1903,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 464,
+                        "id": 481,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1053:7:1",
@@ -1915,31 +1915,31 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 470,
+                  "id": 487,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 469,
+                    "id": 486,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "expression": {
-                        "id": 466,
+                        "id": 483,
                         "name": "lightsabers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 392,
+                        "referencedDeclaration": 409,
                         "src": "1067:11:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Lightsaber_$381_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Lightsaber_$398_storage_$dyn_storage",
                           "typeString": "struct LightsaberForge.Lightsaber storage ref[] storage ref"
                         }
                       },
-                      "id": 467,
+                      "id": 484,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1956,7 +1956,7 @@
                     "operator": "-",
                     "rightExpression": {
                       "hexValue": "31",
-                      "id": 468,
+                      "id": 485,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1984,7 +1984,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 472,
+                          "id": 489,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1995,7 +1995,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 473,
+                        "id": 490,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2009,11 +2009,11 @@
                         }
                       },
                       {
-                        "id": 474,
+                        "id": 491,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 465,
+                        "referencedDeclaration": 482,
                         "src": "1118:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2032,18 +2032,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 471,
+                      "id": 488,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1607,
+                      "referencedDeclaration": 1624,
                       "src": "1100:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 475,
+                    "id": 492,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2058,37 +2058,37 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 476,
+                  "id": 493,
                   "nodeType": "ExpressionStatement",
                   "src": "1100:22:1"
                 },
                 {
                   "expression": {
-                    "id": 482,
+                    "id": 499,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 477,
+                        "id": 494,
                         "name": "lightsaberToOwner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 385,
+                        "referencedDeclaration": 402,
                         "src": "1133:17:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                           "typeString": "mapping(uint256 => address)"
                         }
                       },
-                      "id": 479,
+                      "id": 496,
                       "indexExpression": {
-                        "id": 478,
+                        "id": 495,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 465,
+                        "referencedDeclaration": 482,
                         "src": "1151:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2110,7 +2110,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 480,
+                        "id": 497,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2121,7 +2121,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 481,
+                      "id": 498,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2140,22 +2140,22 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 483,
+                  "id": 500,
                   "nodeType": "ExpressionStatement",
                   "src": "1133:35:1"
                 },
                 {
                   "assignments": [
-                    485
+                    502
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 485,
+                      "id": 502,
                       "mutability": "mutable",
                       "name": "_combination",
                       "nodeType": "VariableDeclaration",
-                      "scope": 505,
+                      "scope": 522,
                       "src": "1179:20:1",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2164,7 +2164,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 484,
+                        "id": 501,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "1179:7:1",
@@ -2176,17 +2176,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 493,
+                  "id": 510,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 489,
+                            "id": 506,
                             "name": "_colorCrystal",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 402,
+                            "referencedDeclaration": 419,
                             "src": "1223:13:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -2194,11 +2194,11 @@
                             }
                           },
                           {
-                            "id": 490,
+                            "id": 507,
                             "name": "_hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 404,
+                            "referencedDeclaration": 421,
                             "src": "1238:5:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -2218,7 +2218,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 487,
+                            "id": 504,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -2229,7 +2229,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 488,
+                          "id": 505,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2242,7 +2242,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 491,
+                        "id": 508,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2265,7 +2265,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 486,
+                      "id": 503,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2276,7 +2276,7 @@
                         "typeString": "function (bytes memory) pure returns (bytes32)"
                       }
                     },
-                    "id": 492,
+                    "id": 509,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2296,31 +2296,31 @@
                 },
                 {
                   "expression": {
-                    "id": 498,
+                    "id": 515,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 494,
+                        "id": 511,
                         "name": "combinationExists",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 389,
+                        "referencedDeclaration": 406,
                         "src": "1256:17:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 496,
+                      "id": 513,
                       "indexExpression": {
-                        "id": 495,
+                        "id": 512,
                         "name": "_combination",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 485,
+                        "referencedDeclaration": 502,
                         "src": "1274:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -2342,7 +2342,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "hexValue": "74727565",
-                      "id": 497,
+                      "id": 514,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2362,7 +2362,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 499,
+                  "id": 516,
                   "nodeType": "ExpressionStatement",
                   "src": "1256:38:1"
                 },
@@ -2370,11 +2370,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 501,
+                        "id": 518,
                         "name": "_colorCrystal",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 402,
+                        "referencedDeclaration": 419,
                         "src": "1330:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2382,11 +2382,11 @@
                         }
                       },
                       {
-                        "id": 502,
+                        "id": 519,
                         "name": "_hilt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 404,
+                        "referencedDeclaration": 421,
                         "src": "1345:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2405,18 +2405,18 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 500,
+                      "id": 517,
                       "name": "LightsaberCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 376,
+                      "referencedDeclaration": 393,
                       "src": "1312:17:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory,string memory)"
                       }
                     },
-                    "id": 503,
+                    "id": 520,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2431,30 +2431,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 504,
+                  "id": 521,
                   "nodeType": "EmitStatement",
                   "src": "1307:44:1"
                 }
               ]
             },
             "functionSelector": "8aa0fdad",
-            "id": 506,
+            "id": 523,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "mint",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 405,
+              "id": 422,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 402,
+                  "id": 419,
                   "mutability": "mutable",
                   "name": "_colorCrystal",
                   "nodeType": "VariableDeclaration",
-                  "scope": 506,
+                  "scope": 523,
                   "src": "563:27:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2463,7 +2463,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 401,
+                    "id": 418,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "563:6:1",
@@ -2476,11 +2476,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 404,
+                  "id": 421,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nodeType": "VariableDeclaration",
-                  "scope": 506,
+                  "scope": 523,
                   "src": "592:19:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2489,7 +2489,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 403,
+                    "id": 420,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "592:6:1",
@@ -2504,19 +2504,19 @@
               "src": "562:50:1"
             },
             "returnParameters": {
-              "id": 406,
+              "id": 423,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "620:0:1"
             },
-            "scope": 507,
+            "scope": 524,
             "src": "549:810:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 508,
+        "scope": 525,
         "src": "137:1227:1"
       }
     ],
@@ -2527,46 +2527,46 @@
       "absolutePath": "/C/Users/Metodi/Desktop/ProjectsDapp/nft-lightsabers/contracts/LightsaberForge.sol",
       "exportedSymbols": {
         "Address": [
-          2363
+          2380
         ],
         "Context": [
-          2386
+          2403
         ],
         "ERC165": [
-          564
+          581
         ],
         "ERC721": [
-          1875
+          1892
         ],
         "EnumerableMap": [
-          2946
+          2963
         ],
         "EnumerableSet": [
-          3438
+          3455
         ],
         "IERC165": [
-          576
+          593
         ],
         "IERC721": [
-          1991
+          2008
         ],
         "IERC721Enumerable": [
-          2022
+          2039
         ],
         "IERC721Metadata": [
-          2049
+          2066
         ],
         "IERC721Receiver": [
-          2067
+          2084
         ],
         "LightsaberForge": [
-          507
+          524
         ],
         "SafeMath": [
-          931
+          948
         ],
         "Strings": [
-          3525
+          3542
         ]
       },
       "license": "MIT"
@@ -2581,22 +2581,22 @@
             ".6"
           ]
         },
-        "id": 367,
+        "id": 384,
         "name": "PragmaDirective",
         "src": "33:23:1"
       },
       {
         "attributes": {
-          "SourceUnit": 1876,
+          "SourceUnit": 1893,
           "absolutePath": "/C/Users/Metodi/Desktop/ProjectsDapp/nft-lightsabers/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol",
           "file": "../node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol",
-          "scope": 508,
+          "scope": 525,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 368,
+        "id": 385,
         "name": "ImportDirective",
         "src": "60:73:1"
       },
@@ -2604,28 +2604,28 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            564,
-            576,
-            1875,
-            1991,
-            2022,
-            2049,
-            2386
+            581,
+            593,
+            1892,
+            2008,
+            2039,
+            2066,
+            2403
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            507,
-            1875,
-            2022,
-            2049,
-            1991,
-            564,
-            576,
-            2386
+            524,
+            1892,
+            2039,
+            2066,
+            2008,
+            581,
+            593,
+            2403
           ],
           "name": "LightsaberForge",
-          "scope": 508
+          "scope": 525
         },
         "children": [
           {
@@ -2634,15 +2634,15 @@
               {
                 "attributes": {
                   "name": "ERC721",
-                  "referencedDeclaration": 1875,
+                  "referencedDeclaration": 1892,
                   "type": "contract ERC721"
                 },
-                "id": 369,
+                "id": 386,
                 "name": "UserDefinedTypeName",
                 "src": "165:6:1"
               }
             ],
-            "id": 370,
+            "id": 387,
             "name": "InheritanceSpecifier",
             "src": "165:6:1"
           },
@@ -2660,7 +2660,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "colorCrystal",
-                      "scope": 376,
+                      "scope": 393,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -2672,12 +2672,12 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 371,
+                        "id": 388,
                         "name": "ElementaryTypeName",
                         "src": "205:6:1"
                       }
                     ],
-                    "id": 372,
+                    "id": 389,
                     "name": "VariableDeclaration",
                     "src": "205:19:1"
                   },
@@ -2687,7 +2687,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "hilt",
-                      "scope": 376,
+                      "scope": 393,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string",
@@ -2699,22 +2699,22 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 373,
+                        "id": 390,
                         "name": "ElementaryTypeName",
                         "src": "226:6:1"
                       }
                     ],
-                    "id": 374,
+                    "id": 391,
                     "name": "VariableDeclaration",
                     "src": "226:11:1"
                   }
                 ],
-                "id": 375,
+                "id": 392,
                 "name": "ParameterList",
                 "src": "204:34:1"
               }
             ],
-            "id": 376,
+            "id": 393,
             "name": "EventDefinition",
             "src": "181:58:1"
           },
@@ -2722,7 +2722,7 @@
             "attributes": {
               "canonicalName": "LightsaberForge.Lightsaber",
               "name": "Lightsaber",
-              "scope": 507,
+              "scope": 524,
               "visibility": "public"
             },
             "children": [
@@ -2731,7 +2731,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "colorCrystal",
-                  "scope": 381,
+                  "scope": 398,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -2743,12 +2743,12 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 377,
+                    "id": 394,
                     "name": "ElementaryTypeName",
                     "src": "276:6:1"
                   }
                 ],
-                "id": 378,
+                "id": 395,
                 "name": "VariableDeclaration",
                 "src": "276:19:1"
               },
@@ -2757,7 +2757,7 @@
                   "constant": false,
                   "mutability": "mutable",
                   "name": "hilt",
-                  "scope": 381,
+                  "scope": 398,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -2769,17 +2769,17 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 379,
+                    "id": 396,
                     "name": "ElementaryTypeName",
                     "src": "306:6:1"
                   }
                 ],
-                "id": 380,
+                "id": 397,
                 "name": "VariableDeclaration",
                 "src": "306:11:1"
               }
             ],
-            "id": 381,
+            "id": 398,
             "name": "StructDefinition",
             "src": "247:78:1"
           },
@@ -2789,7 +2789,7 @@
               "functionSelector": "96abc460",
               "mutability": "mutable",
               "name": "lightsaberToOwner",
-              "scope": 507,
+              "scope": 524,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => address)",
@@ -2806,7 +2806,7 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 382,
+                    "id": 399,
                     "name": "ElementaryTypeName",
                     "src": "342:7:1"
                   },
@@ -2816,17 +2816,17 @@
                       "stateMutability": "nonpayable",
                       "type": "address"
                     },
-                    "id": 383,
+                    "id": 400,
                     "name": "ElementaryTypeName",
                     "src": "353:7:1"
                   }
                 ],
-                "id": 384,
+                "id": 401,
                 "name": "Mapping",
                 "src": "333:28:1"
               }
             ],
-            "id": 385,
+            "id": 402,
             "name": "VariableDeclaration",
             "src": "333:53:1"
           },
@@ -2836,7 +2836,7 @@
               "functionSelector": "cb642ffc",
               "mutability": "mutable",
               "name": "combinationExists",
-              "scope": 507,
+              "scope": 524,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(bytes32 => bool)",
@@ -2853,7 +2853,7 @@
                       "name": "bytes32",
                       "type": "bytes32"
                     },
-                    "id": 386,
+                    "id": 403,
                     "name": "ElementaryTypeName",
                     "src": "402:7:1"
                   },
@@ -2862,17 +2862,17 @@
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 387,
+                    "id": 404,
                     "name": "ElementaryTypeName",
                     "src": "413:4:1"
                   }
                 ],
-                "id": 388,
+                "id": 405,
                 "name": "Mapping",
                 "src": "393:25:1"
               }
             ],
-            "id": 389,
+            "id": 406,
             "name": "VariableDeclaration",
             "src": "393:50:1"
           },
@@ -2882,7 +2882,7 @@
               "functionSelector": "0cae4910",
               "mutability": "mutable",
               "name": "lightsabers",
-              "scope": 507,
+              "scope": 524,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "struct LightsaberForge.Lightsaber[]",
@@ -2897,20 +2897,20 @@
                   {
                     "attributes": {
                       "name": "Lightsaber",
-                      "referencedDeclaration": 381,
+                      "referencedDeclaration": 398,
                       "type": "struct LightsaberForge.Lightsaber"
                     },
-                    "id": 390,
+                    "id": 407,
                     "name": "UserDefinedTypeName",
                     "src": "452:10:1"
                   }
                 ],
-                "id": 391,
+                "id": 408,
                 "name": "ArrayTypeName",
                 "src": "452:12:1"
               }
             ],
-            "id": 392,
+            "id": 409,
             "name": "VariableDeclaration",
             "src": "452:31:1"
           },
@@ -2920,7 +2920,7 @@
               "isConstructor": true,
               "kind": "constructor",
               "name": "",
-              "scope": 507,
+              "scope": 524,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -2933,7 +2933,7 @@
                   ]
                 },
                 "children": [],
-                "id": 393,
+                "id": 410,
                 "name": "ParameterList",
                 "src": "503:2:1"
               },
@@ -2944,7 +2944,7 @@
                   ]
                 },
                 "children": [],
-                "id": 398,
+                "id": 415,
                 "name": "ParameterList",
                 "src": "539:0:1"
               },
@@ -2955,11 +2955,11 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1875,
+                      "referencedDeclaration": 1892,
                       "type": "type(contract ERC721)",
                       "value": "ERC721"
                     },
-                    "id": 394,
+                    "id": 411,
                     "name": "Identifier",
                     "src": "506:6:1"
                   },
@@ -2974,7 +2974,7 @@
                       "type": "literal_string \"LightsaberForge\"",
                       "value": "LightsaberForge"
                     },
-                    "id": 395,
+                    "id": 412,
                     "name": "Literal",
                     "src": "513:17:1"
                   },
@@ -2989,12 +2989,12 @@
                       "type": "literal_string \"LSF\"",
                       "value": "LSF"
                     },
-                    "id": 396,
+                    "id": 413,
                     "name": "Literal",
                     "src": "532:5:1"
                   }
                 ],
-                "id": 397,
+                "id": 414,
                 "name": "ModifierInvocation",
                 "src": "506:32:1"
               },
@@ -3005,12 +3005,12 @@
                   ]
                 },
                 "children": [],
-                "id": 399,
+                "id": 416,
                 "name": "Block",
                 "src": "539:2:1"
               }
             ],
-            "id": 400,
+            "id": 417,
             "name": "FunctionDefinition",
             "src": "492:49:1"
           },
@@ -3024,7 +3024,7 @@
                 null
               ],
               "name": "mint",
-              "scope": 507,
+              "scope": 524,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -3037,7 +3037,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "_colorCrystal",
-                      "scope": 506,
+                      "scope": 523,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -3049,12 +3049,12 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 401,
+                        "id": 418,
                         "name": "ElementaryTypeName",
                         "src": "563:6:1"
                       }
                     ],
-                    "id": 402,
+                    "id": 419,
                     "name": "VariableDeclaration",
                     "src": "563:27:1"
                   },
@@ -3063,7 +3063,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "_hilt",
-                      "scope": 506,
+                      "scope": 523,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -3075,17 +3075,17 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 403,
+                        "id": 420,
                         "name": "ElementaryTypeName",
                         "src": "592:6:1"
                       }
                     ],
-                    "id": 404,
+                    "id": 421,
                     "name": "VariableDeclaration",
                     "src": "592:19:1"
                   }
                 ],
-                "id": 405,
+                "id": 422,
                 "name": "ParameterList",
                 "src": "562:50:1"
               },
@@ -3096,7 +3096,7 @@
                   ]
                 },
                 "children": [],
-                "id": 406,
+                "id": 423,
                 "name": "ParameterList",
                 "src": "620:0:1"
               },
@@ -3139,7 +3139,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 407,
+                            "id": 424,
                             "name": "Identifier",
                             "src": "631:7:1"
                           },
@@ -3168,11 +3168,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 389,
+                                      "referencedDeclaration": 406,
                                       "type": "mapping(bytes32 => bool)",
                                       "value": "combinationExists"
                                     },
-                                    "id": 408,
+                                    "id": 425,
                                     "name": "Identifier",
                                     "src": "640:17:1"
                                   },
@@ -3206,7 +3206,7 @@
                                           "type": "function (bytes memory) pure returns (bytes32)",
                                           "value": "keccak256"
                                         },
-                                        "id": 409,
+                                        "id": 426,
                                         "name": "Identifier",
                                         "src": "658:9:1"
                                       },
@@ -3254,12 +3254,12 @@
                                                   "type": "abi",
                                                   "value": "abi"
                                                 },
-                                                "id": 410,
+                                                "id": 427,
                                                 "name": "Identifier",
                                                 "src": "668:3:1"
                                               }
                                             ],
-                                            "id": 411,
+                                            "id": 428,
                                             "name": "MemberAccess",
                                             "src": "668:10:1"
                                           },
@@ -3268,11 +3268,11 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 402,
+                                              "referencedDeclaration": 419,
                                               "type": "string memory",
                                               "value": "_colorCrystal"
                                             },
-                                            "id": 412,
+                                            "id": 429,
                                             "name": "Identifier",
                                             "src": "679:13:1"
                                           },
@@ -3281,31 +3281,31 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 404,
+                                              "referencedDeclaration": 421,
                                               "type": "string memory",
                                               "value": "_hilt"
                                             },
-                                            "id": 413,
+                                            "id": 430,
                                             "name": "Identifier",
                                             "src": "694:5:1"
                                           }
                                         ],
-                                        "id": 414,
+                                        "id": 431,
                                         "name": "FunctionCall",
                                         "src": "668:32:1"
                                       }
                                     ],
-                                    "id": 415,
+                                    "id": 432,
                                     "name": "FunctionCall",
                                     "src": "658:43:1"
                                   }
                                 ],
-                                "id": 416,
+                                "id": 433,
                                 "name": "IndexAccess",
                                 "src": "640:62:1"
                               }
                             ],
-                            "id": 417,
+                            "id": 434,
                             "name": "UnaryOperation",
                             "src": "639:63:1"
                           },
@@ -3320,17 +3320,17 @@
                               "type": "literal_string \"This combination cannot exist more than once.\"",
                               "value": "This combination cannot exist more than once."
                             },
-                            "id": 418,
+                            "id": 435,
                             "name": "Literal",
                             "src": "704:47:1"
                           }
                         ],
-                        "id": 419,
+                        "id": 436,
                         "name": "FunctionCall",
                         "src": "631:121:1"
                       }
                     ],
-                    "id": 420,
+                    "id": 437,
                     "name": "ExpressionStatement",
                     "src": "631:121:1"
                   },
@@ -3371,7 +3371,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 421,
+                            "id": 438,
                             "name": "Identifier",
                             "src": "763:7:1"
                           },
@@ -3419,7 +3419,7 @@
                                       "type": "function (bytes memory) pure returns (bytes32)",
                                       "value": "keccak256"
                                     },
-                                    "id": 422,
+                                    "id": 439,
                                     "name": "Identifier",
                                     "src": "771:9:1"
                                   },
@@ -3463,12 +3463,12 @@
                                               "type": "abi",
                                               "value": "abi"
                                             },
-                                            "id": 423,
+                                            "id": 440,
                                             "name": "Identifier",
                                             "src": "781:3:1"
                                           }
                                         ],
-                                        "id": 424,
+                                        "id": 441,
                                         "name": "MemberAccess",
                                         "src": "781:10:1"
                                       },
@@ -3477,21 +3477,21 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 402,
+                                          "referencedDeclaration": 419,
                                           "type": "string memory",
                                           "value": "_colorCrystal"
                                         },
-                                        "id": 425,
+                                        "id": 442,
                                         "name": "Identifier",
                                         "src": "792:13:1"
                                       }
                                     ],
-                                    "id": 426,
+                                    "id": 443,
                                     "name": "FunctionCall",
                                     "src": "781:25:1"
                                   }
                                 ],
-                                "id": 427,
+                                "id": 444,
                                 "name": "FunctionCall",
                                 "src": "771:36:1"
                               },
@@ -3525,7 +3525,7 @@
                                       "type": "function (bytes memory) pure returns (bytes32)",
                                       "value": "keccak256"
                                     },
-                                    "id": 428,
+                                    "id": 445,
                                     "name": "Identifier",
                                     "src": "811:9:1"
                                   },
@@ -3569,12 +3569,12 @@
                                               "type": "abi",
                                               "value": "abi"
                                             },
-                                            "id": 429,
+                                            "id": 446,
                                             "name": "Identifier",
                                             "src": "821:3:1"
                                           }
                                         ],
-                                        "id": 430,
+                                        "id": 447,
                                         "name": "MemberAccess",
                                         "src": "821:10:1"
                                       },
@@ -3589,22 +3589,22 @@
                                           "type": "literal_string \"\"",
                                           "value": ""
                                         },
-                                        "id": 431,
+                                        "id": 448,
                                         "name": "Literal",
                                         "src": "832:2:1"
                                       }
                                     ],
-                                    "id": 432,
+                                    "id": 449,
                                     "name": "FunctionCall",
                                     "src": "821:14:1"
                                   }
                                 ],
-                                "id": 433,
+                                "id": 450,
                                 "name": "FunctionCall",
                                 "src": "811:25:1"
                               }
                             ],
-                            "id": 434,
+                            "id": 451,
                             "name": "BinaryOperation",
                             "src": "771:65:1"
                           },
@@ -3619,17 +3619,17 @@
                               "type": "literal_string \"The color should not be empty\"",
                               "value": "The color should not be empty"
                             },
-                            "id": 435,
+                            "id": 452,
                             "name": "Literal",
                             "src": "838:31:1"
                           }
                         ],
-                        "id": 436,
+                        "id": 453,
                         "name": "FunctionCall",
                         "src": "763:107:1"
                       }
                     ],
-                    "id": 437,
+                    "id": 454,
                     "name": "ExpressionStatement",
                     "src": "763:107:1"
                   },
@@ -3670,7 +3670,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 438,
+                            "id": 455,
                             "name": "Identifier",
                             "src": "881:7:1"
                           },
@@ -3718,7 +3718,7 @@
                                       "type": "function (bytes memory) pure returns (bytes32)",
                                       "value": "keccak256"
                                     },
-                                    "id": 439,
+                                    "id": 456,
                                     "name": "Identifier",
                                     "src": "889:9:1"
                                   },
@@ -3762,12 +3762,12 @@
                                               "type": "abi",
                                               "value": "abi"
                                             },
-                                            "id": 440,
+                                            "id": 457,
                                             "name": "Identifier",
                                             "src": "899:3:1"
                                           }
                                         ],
-                                        "id": 441,
+                                        "id": 458,
                                         "name": "MemberAccess",
                                         "src": "899:10:1"
                                       },
@@ -3776,21 +3776,21 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 404,
+                                          "referencedDeclaration": 421,
                                           "type": "string memory",
                                           "value": "_hilt"
                                         },
-                                        "id": 442,
+                                        "id": 459,
                                         "name": "Identifier",
                                         "src": "910:5:1"
                                       }
                                     ],
-                                    "id": 443,
+                                    "id": 460,
                                     "name": "FunctionCall",
                                     "src": "899:17:1"
                                   }
                                 ],
-                                "id": 444,
+                                "id": 461,
                                 "name": "FunctionCall",
                                 "src": "889:28:1"
                               },
@@ -3824,7 +3824,7 @@
                                       "type": "function (bytes memory) pure returns (bytes32)",
                                       "value": "keccak256"
                                     },
-                                    "id": 445,
+                                    "id": 462,
                                     "name": "Identifier",
                                     "src": "921:9:1"
                                   },
@@ -3868,12 +3868,12 @@
                                               "type": "abi",
                                               "value": "abi"
                                             },
-                                            "id": 446,
+                                            "id": 463,
                                             "name": "Identifier",
                                             "src": "931:3:1"
                                           }
                                         ],
-                                        "id": 447,
+                                        "id": 464,
                                         "name": "MemberAccess",
                                         "src": "931:10:1"
                                       },
@@ -3888,22 +3888,22 @@
                                           "type": "literal_string \"\"",
                                           "value": ""
                                         },
-                                        "id": 448,
+                                        "id": 465,
                                         "name": "Literal",
                                         "src": "942:2:1"
                                       }
                                     ],
-                                    "id": 449,
+                                    "id": 466,
                                     "name": "FunctionCall",
                                     "src": "931:14:1"
                                   }
                                 ],
-                                "id": 450,
+                                "id": 467,
                                 "name": "FunctionCall",
                                 "src": "921:25:1"
                               }
                             ],
-                            "id": 451,
+                            "id": 468,
                             "name": "BinaryOperation",
                             "src": "889:57:1"
                           },
@@ -3918,17 +3918,17 @@
                               "type": "literal_string \"The hilt should not be empty\"",
                               "value": "The hilt should not be empty"
                             },
-                            "id": 452,
+                            "id": 469,
                             "name": "Literal",
                             "src": "948:30:1"
                           }
                         ],
-                        "id": 453,
+                        "id": 470,
                         "name": "FunctionCall",
                         "src": "881:98:1"
                       }
                     ],
-                    "id": 454,
+                    "id": 471,
                     "name": "ExpressionStatement",
                     "src": "881:98:1"
                   },
@@ -3953,7 +3953,7 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_struct$_Lightsaber_$381_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Lightsaber_$398_memory_ptr",
                                   "typeString": "struct LightsaberForge.Lightsaber memory"
                                 }
                               ],
@@ -3970,16 +3970,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 392,
+                                  "referencedDeclaration": 409,
                                   "type": "struct LightsaberForge.Lightsaber storage ref[] storage ref",
                                   "value": "lightsabers"
                                 },
-                                "id": 455,
+                                "id": 472,
                                 "name": "Identifier",
                                 "src": "991:11:1"
                               }
                             ],
-                            "id": 457,
+                            "id": 474,
                             "name": "MemberAccess",
                             "src": "991:16:1"
                           },
@@ -4013,11 +4013,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 381,
+                                  "referencedDeclaration": 398,
                                   "type": "type(struct LightsaberForge.Lightsaber storage pointer)",
                                   "value": "Lightsaber"
                                 },
-                                "id": 458,
+                                "id": 475,
                                 "name": "Identifier",
                                 "src": "1008:10:1"
                               },
@@ -4026,11 +4026,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 402,
+                                  "referencedDeclaration": 419,
                                   "type": "string memory",
                                   "value": "_colorCrystal"
                                 },
-                                "id": 459,
+                                "id": 476,
                                 "name": "Identifier",
                                 "src": "1019:13:1"
                               },
@@ -4039,33 +4039,33 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 404,
+                                  "referencedDeclaration": 421,
                                   "type": "string memory",
                                   "value": "_hilt"
                                 },
-                                "id": 460,
+                                "id": 477,
                                 "name": "Identifier",
                                 "src": "1034:5:1"
                               }
                             ],
-                            "id": 461,
+                            "id": 478,
                             "name": "FunctionCall",
                             "src": "1008:32:1"
                           }
                         ],
-                        "id": 462,
+                        "id": 479,
                         "name": "FunctionCall",
                         "src": "991:50:1"
                       }
                     ],
-                    "id": 463,
+                    "id": 480,
                     "name": "ExpressionStatement",
                     "src": "991:50:1"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        465
+                        482
                       ]
                     },
                     "children": [
@@ -4074,7 +4074,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "_id",
-                          "scope": 505,
+                          "scope": 522,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -4086,12 +4086,12 @@
                               "name": "uint256",
                               "type": "uint256"
                             },
-                            "id": 464,
+                            "id": 481,
                             "name": "ElementaryTypeName",
                             "src": "1053:7:1"
                           }
                         ],
-                        "id": 465,
+                        "id": 482,
                         "name": "VariableDeclaration",
                         "src": "1053:11:1"
                       },
@@ -4124,16 +4124,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 392,
+                                  "referencedDeclaration": 409,
                                   "type": "struct LightsaberForge.Lightsaber storage ref[] storage ref",
                                   "value": "lightsabers"
                                 },
-                                "id": 466,
+                                "id": 483,
                                 "name": "Identifier",
                                 "src": "1067:11:1"
                               }
                             ],
-                            "id": 467,
+                            "id": 484,
                             "name": "MemberAccess",
                             "src": "1067:18:1"
                           },
@@ -4148,17 +4148,17 @@
                               "type": "int_const 1",
                               "value": "1"
                             },
-                            "id": 468,
+                            "id": 485,
                             "name": "Literal",
                             "src": "1088:1:1"
                           }
                         ],
-                        "id": 469,
+                        "id": 486,
                         "name": "BinaryOperation",
                         "src": "1067:22:1"
                       }
                     ],
-                    "id": 470,
+                    "id": 487,
                     "name": "VariableDeclarationStatement",
                     "src": "1053:36:1"
                   },
@@ -4194,11 +4194,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1607,
+                              "referencedDeclaration": 1624,
                               "type": "function (address,uint256)",
                               "value": "_mint"
                             },
-                            "id": 471,
+                            "id": 488,
                             "name": "Identifier",
                             "src": "1100:5:1"
                           },
@@ -4221,12 +4221,12 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 472,
+                                "id": 489,
                                 "name": "Identifier",
                                 "src": "1106:3:1"
                               }
                             ],
-                            "id": 473,
+                            "id": 490,
                             "name": "MemberAccess",
                             "src": "1106:10:1"
                           },
@@ -4235,21 +4235,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 465,
+                              "referencedDeclaration": 482,
                               "type": "uint256",
                               "value": "_id"
                             },
-                            "id": 474,
+                            "id": 491,
                             "name": "Identifier",
                             "src": "1118:3:1"
                           }
                         ],
-                        "id": 475,
+                        "id": 492,
                         "name": "FunctionCall",
                         "src": "1100:22:1"
                       }
                     ],
-                    "id": 476,
+                    "id": 493,
                     "name": "ExpressionStatement",
                     "src": "1100:22:1"
                   },
@@ -4279,11 +4279,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 385,
+                                  "referencedDeclaration": 402,
                                   "type": "mapping(uint256 => address)",
                                   "value": "lightsaberToOwner"
                                 },
-                                "id": 477,
+                                "id": 494,
                                 "name": "Identifier",
                                 "src": "1133:17:1"
                               },
@@ -4292,16 +4292,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 465,
+                                  "referencedDeclaration": 482,
                                   "type": "uint256",
                                   "value": "_id"
                                 },
-                                "id": 478,
+                                "id": 495,
                                 "name": "Identifier",
                                 "src": "1151:3:1"
                               }
                             ],
-                            "id": 479,
+                            "id": 496,
                             "name": "IndexAccess",
                             "src": "1133:22:1"
                           },
@@ -4324,29 +4324,29 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 480,
+                                "id": 497,
                                 "name": "Identifier",
                                 "src": "1158:3:1"
                               }
                             ],
-                            "id": 481,
+                            "id": 498,
                             "name": "MemberAccess",
                             "src": "1158:10:1"
                           }
                         ],
-                        "id": 482,
+                        "id": 499,
                         "name": "Assignment",
                         "src": "1133:35:1"
                       }
                     ],
-                    "id": 483,
+                    "id": 500,
                     "name": "ExpressionStatement",
                     "src": "1133:35:1"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        485
+                        502
                       ]
                     },
                     "children": [
@@ -4355,7 +4355,7 @@
                           "constant": false,
                           "mutability": "mutable",
                           "name": "_combination",
-                          "scope": 505,
+                          "scope": 522,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "bytes32",
@@ -4367,12 +4367,12 @@
                               "name": "bytes32",
                               "type": "bytes32"
                             },
-                            "id": 484,
+                            "id": 501,
                             "name": "ElementaryTypeName",
                             "src": "1179:7:1"
                           }
                         ],
-                        "id": 485,
+                        "id": 502,
                         "name": "VariableDeclaration",
                         "src": "1179:20:1"
                       },
@@ -4406,7 +4406,7 @@
                               "type": "function (bytes memory) pure returns (bytes32)",
                               "value": "keccak256"
                             },
-                            "id": 486,
+                            "id": 503,
                             "name": "Identifier",
                             "src": "1202:9:1"
                           },
@@ -4454,12 +4454,12 @@
                                       "type": "abi",
                                       "value": "abi"
                                     },
-                                    "id": 487,
+                                    "id": 504,
                                     "name": "Identifier",
                                     "src": "1212:3:1"
                                   }
                                 ],
-                                "id": 488,
+                                "id": 505,
                                 "name": "MemberAccess",
                                 "src": "1212:10:1"
                               },
@@ -4468,11 +4468,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 402,
+                                  "referencedDeclaration": 419,
                                   "type": "string memory",
                                   "value": "_colorCrystal"
                                 },
-                                "id": 489,
+                                "id": 506,
                                 "name": "Identifier",
                                 "src": "1223:13:1"
                               },
@@ -4481,26 +4481,26 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 404,
+                                  "referencedDeclaration": 421,
                                   "type": "string memory",
                                   "value": "_hilt"
                                 },
-                                "id": 490,
+                                "id": 507,
                                 "name": "Identifier",
                                 "src": "1238:5:1"
                               }
                             ],
-                            "id": 491,
+                            "id": 508,
                             "name": "FunctionCall",
                             "src": "1212:32:1"
                           }
                         ],
-                        "id": 492,
+                        "id": 509,
                         "name": "FunctionCall",
                         "src": "1202:43:1"
                       }
                     ],
-                    "id": 493,
+                    "id": 510,
                     "name": "VariableDeclarationStatement",
                     "src": "1179:66:1"
                   },
@@ -4530,11 +4530,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 389,
+                                  "referencedDeclaration": 406,
                                   "type": "mapping(bytes32 => bool)",
                                   "value": "combinationExists"
                                 },
-                                "id": 494,
+                                "id": 511,
                                 "name": "Identifier",
                                 "src": "1256:17:1"
                               },
@@ -4543,16 +4543,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 485,
+                                  "referencedDeclaration": 502,
                                   "type": "bytes32",
                                   "value": "_combination"
                                 },
-                                "id": 495,
+                                "id": 512,
                                 "name": "Identifier",
                                 "src": "1274:12:1"
                               }
                             ],
-                            "id": 496,
+                            "id": 513,
                             "name": "IndexAccess",
                             "src": "1256:31:1"
                           },
@@ -4567,17 +4567,17 @@
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 497,
+                            "id": 514,
                             "name": "Literal",
                             "src": "1290:4:1"
                           }
                         ],
-                        "id": 498,
+                        "id": 515,
                         "name": "Assignment",
                         "src": "1256:38:1"
                       }
                     ],
-                    "id": 499,
+                    "id": 516,
                     "name": "ExpressionStatement",
                     "src": "1256:38:1"
                   },
@@ -4613,11 +4613,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 376,
+                              "referencedDeclaration": 393,
                               "type": "function (string memory,string memory)",
                               "value": "LightsaberCreated"
                             },
-                            "id": 500,
+                            "id": 517,
                             "name": "Identifier",
                             "src": "1312:17:1"
                           },
@@ -4626,11 +4626,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 402,
+                              "referencedDeclaration": 419,
                               "type": "string memory",
                               "value": "_colorCrystal"
                             },
-                            "id": 501,
+                            "id": 518,
                             "name": "Identifier",
                             "src": "1330:13:1"
                           },
@@ -4639,41 +4639,41 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 404,
+                              "referencedDeclaration": 421,
                               "type": "string memory",
                               "value": "_hilt"
                             },
-                            "id": 502,
+                            "id": 519,
                             "name": "Identifier",
                             "src": "1345:5:1"
                           }
                         ],
-                        "id": 503,
+                        "id": 520,
                         "name": "FunctionCall",
                         "src": "1312:39:1"
                       }
                     ],
-                    "id": 504,
+                    "id": 521,
                     "name": "EmitStatement",
                     "src": "1307:44:1"
                   }
                 ],
-                "id": 505,
+                "id": 522,
                 "name": "Block",
                 "src": "620:739:1"
               }
             ],
-            "id": 506,
+            "id": 523,
             "name": "FunctionDefinition",
             "src": "549:810:1"
           }
         ],
-        "id": 507,
+        "id": 524,
         "name": "ContractDefinition",
         "src": "137:1227:1"
       }
     ],
-    "id": 508,
+    "id": 525,
     "name": "SourceUnit",
     "src": "33:1331:1"
   },
@@ -4690,7 +4690,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-12T20:33:15.901Z",
+  "updatedAt": "2021-03-13T13:29:09.719Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

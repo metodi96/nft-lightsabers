@@ -35,6 +35,11 @@ contract LightsaberAuction is LightsaberForge {
         _;
     }
 
+    modifier onlyAuctionOwner(uint256 _tokenId) {
+        require(msg.sender == tokenIdToAuction[_tokenId].owner, "Only the owner of the auction can call this function");
+        _;
+    }
+
     function createAuction(uint256 _tokenId, uint256 _startDate, uint256 _endDate, uint256 _highestBid) public onlyOwner(_tokenId) {
         require(tokenIdToAuction[_tokenId].startDate == 0, "An auction already exists for this token id");
         require(_startDate < _endDate, "Start date must be before end date");
@@ -80,7 +85,7 @@ contract LightsaberAuction is LightsaberForge {
         return true;
     }
 
-    function endAuction(uint256 _tokenId) public onlyOwner(_tokenId) {
+    function endAuction(uint256 _tokenId) public onlyAuctionOwner(_tokenId) {
         require(tokenIdToAuction[_tokenId].startDate > 0, "Auction does not exist");
         require(!tokenIdToAuction[_tokenId].ended, "Auction has already ended");
         Auction storage auction = tokenIdToAuction[_tokenId];
