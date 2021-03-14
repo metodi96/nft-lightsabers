@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AppContext from './appContext';
-import LandingPage from './pages/landingPage/LandingPage'
-import 'semantic-ui-css/semantic.min.css';
+import Home from './pages/Home'
+import Collection from './pages/Collection'
+import Guide from './pages/Guide'
+import Auctions from './pages/Auctions'
+import Navbar from './components/Navbar'
+
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 const App = ({ web3 }) => {
@@ -55,7 +59,13 @@ const App = ({ web3 }) => {
       networkId
     }}
     >
-      <Route path='/' exact component={LandingPage} />
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/collection' exact component={Collection} />
+        <Route path='/Auctions' exact component={Auctions} />
+        <Route path='/Guide' exact component={Guide} />
+      </Switch>
       <ToastContainer autoClose={10000} />
     </AppContext.Provider>
   );

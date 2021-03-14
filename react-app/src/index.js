@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './styles/index.css'
 import App from './App';
 import getWeb3 from './web3-config';
 import { BrowserRouter } from 'react-router-dom';
