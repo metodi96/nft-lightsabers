@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Route } from 'react-router-dom';
+import AppContext from './appContext';
+import LandingPage from './pages/landingPage/LandingPage'
+import 'semantic-ui-css/semantic.min.css';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+const App = ({ web3 }) => {
+  const [account, setAccount] = useState('');
+  const [networkId, setNetworkId] = useState('');
+  const [hasWalletAddress, setHasWalletAddress] = useState(false);
+  const [hasAccountChanged, setHasAccountChanged] = useState(false);
+  const [screenBlocked, setScreenBlocked] = useState(false);
+  //const location = useLocation();
 
-function App() {
+  useEffect(() => {
+    const init = async () => {
+      if (window.ethereum) {
+        const networkId = await web3.eth.net.getId();
+        setNetworkId(networkId);
+        const [selectedAccount] = await web3.eth.getAccounts();
+        setAccount(web3.utils.toChecksumAddress(selectedAccount));
+        window.ethereum.on('accountsChanged', (accounts) => {
+          setHasAccountChanged(true);
+          if (!accounts[0]) {
+            setHasWalletAddress(false);
+          } else {
+            setHasWalletAddress(true);
+            setAccount(accounts[0]);
+          }
+        });
+        window.ethereum.on('chainChanged', (_chainId) => window.location.reload());
+      }
+    };
+    init();
+  }, [web3.utils, web3.eth]);
+
+  const handleBlockScreen = (blocked) => {
+    setScreenBlocked(blocked);
+  };
+
+  const handleAccountChanged = (newHasAccountChanged) => {
+    setHasAccountChanged(newHasAccountChanged);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={{
+      web3,
+      handleBlockScreen,
+      screenBlocked,
+      account,
+      hasWalletAddress,
+      hasAccountChanged,
+      handleAccountChanged,
+      networkId
+    }}
+    >
+      <Route path='/' exact component={LandingPage} />
+      <ToastContainer autoClose={10000} />
+    </AppContext.Provider>
   );
 }
 
