@@ -6,7 +6,7 @@ function CustomNavLink({content}) {
         <NavLink
             to={content.toLowerCase()}
             activeClassName='bg-gray-900'
-            className="inline-flex items-center py-3 px-3 my-6 rounded hover:text-gray-200 text-1xl cursive">{content}</NavLink>
+            className="inline-flex items-center py-3 px-3 my-9 mr-5 rounded hover:text-gray-200 text-1xl cursive">{content}</NavLink>
     )
 }
 

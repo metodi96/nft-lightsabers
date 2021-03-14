@@ -15,7 +15,7 @@ function Navbar() {
         if (window.ethereum) {
             return !hasWalletAddress && !account ?
                 <button onClick={handleConnect}>No wallet address detected</button>
-                : account;
+                : `${account.substring(0,8)}...${account.substring(account.length-4, account.length)}`;
         } else {
             return <button onClick={handleInstall}>Install MetaMask</button>;
         }
@@ -24,20 +24,21 @@ function Navbar() {
     return (
         <header className='bg-black text-white'>
             <div className='container mx-auto flex justify-between'>
-                <NavLink
-                    to='/'
-                    exact
-                    className='inline-flex items-center py-6 px-3 hover:text-grey-200 text-4xl font-bold tracking-widest'>
-                    <img src={lightsaber} width={120} height={120} alt='ls-header' />
-                </NavLink>
+                
                 <nav className='flex'>
+                    <NavLink
+                        to='/'
+                        exact
+                        className='inline-flex items-center py-6 px-3 hover:text-grey-200 text-4xl font-bold tracking-widest'>
+                        <img src={lightsaber} width={120} alt='ls-header' />
+                    </NavLink>
                     <CustomNavLink content='Collection' />
                     <CustomNavLink content='Auctions' />
                     <CustomNavLink content='Guide' />
                 </nav>
-                <div className='inline-flex py-3 px-3 my-6 mr-5'>
-                    <img src={wallet} width={40} height={40} alt='wallet' />
-                    <span className='py-2' data-tip="Wallet Address">
+                <div className='inline-flex py-3 px-3 my-7 mr-8'>
+                    <img className='mr-2' src={wallet} width={40} height={40} alt='wallet' />
+                    <span className='py-2' data-tip={`Wallet Address: ${account}`}>
                         {renderMetaMaskLabel()}
                     </span>
                     <ReactTooltip />
